@@ -1,0 +1,1185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>How BTMS Works | Bus Tracking & Management System</title>
+
+    <meta
+      name="description"
+      content="Understand how BTMS manages students, buses, routes, GPS information and real-time bus tracking."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="brand">
+          <div class="brand-mark">
+            <i class="fa-solid fa-bus"></i>
+          </div>
+
+          <div>
+            <span class="brand-name">BTMS</span>
+            <span class="brand-subtitle">
+              Bus Tracking & Management System
+            </span>
+          </div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+
+          <a href="workflow.html" class="active"> How It Works </a>
+        </nav>
+
+        <a href="index.html" class="nav-button">
+          Back to Home
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= WORKFLOW HERO ================= -->
+
+      <section class="workflow-hero">
+        <div class="container">
+          <div class="workflow-hero-grid">
+            <div class="workflow-hero-content">
+              <div class="eyebrow">
+                <span class="status-dot"></span>
+                BTMS System Workflow
+              </div>
+
+              <h1>
+                How does BTMS
+                <span>actually work?</span>
+              </h1>
+
+              <p>
+                From the moment a student account is created, to the moment the
+                student sees a bus moving on the map, BTMS connects multiple
+                parts of the transport system together.
+              </p>
+
+              <div class="workflow-equation">
+                <span> College Data </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <span> BTMS </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <span> Student </span>
+              </div>
+            </div>
+
+            <!-- 9:16 VIDEO -->
+
+            <div class="video-side">
+              <div class="video-label">
+                <span class="demo-dot"></span>
+                SYSTEM WORKFLOW
+              </div>
+
+              <div class="btms-animation">
+                <!-- Background grid -->
+                <div class="animation-grid"></div>
+
+                <!-- Glow -->
+                <div class="animation-glow"></div>
+
+                <!-- Top status -->
+                <div class="animation-status">
+                  <span class="status-live-dot"></span>
+                  LIVE SYSTEM
+                </div>
+
+                <!-- Map area -->
+                <div class="map-area">
+                  <div class="map-road road-one"></div>
+                  <div class="map-road road-two"></div>
+                  <div class="map-road road-three"></div>
+
+                  <!-- Route -->
+                  <svg
+                    class="route-svg"
+                    viewBox="0 0 300 480"
+                    preserveAspectRatio="none"
+                  >
+                    <path
+                      d="M35 430 C80 370, 55 320, 125 280 S245 190, 205 120 S150 70, 270 35"
+                    />
+                  </svg>
+
+                  <!-- College -->
+                  <div class="location-point college-point">
+                    <div class="location-pulse"></div>
+                    <div class="location-icon">
+                      <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <span>KIOT</span>
+                  </div>
+
+                  <!-- Moving bus -->
+                  <div class="animated-bus">
+                    <div class="bus-pulse"></div>
+
+                    <div class="bus-marker">
+                      <i class="fa-solid fa-bus"></i>
+                    </div>
+
+                    <div class="bus-info">
+                      <strong>BUS 13</strong>
+                      <span>Moving</span>
+                    </div>
+                  </div>
+
+                  <!-- Stops -->
+                  <div class="stop stop-one"></div>
+                  <div class="stop stop-two"></div>
+                  <div class="stop stop-three"></div>
+                </div>
+
+                <!-- Bottom information -->
+                <div class="animation-info">
+                  <div class="info-header">
+                    <div>
+                      <span>BUS TRACKING</span>
+                      <strong>Live Location</strong>
+                    </div>
+
+                    <div class="signal-icon">
+                      <i class="fa-solid fa-satellite-dish"></i>
+                    </div>
+                  </div>
+
+                  <div class="info-data">
+                    <div>
+                      <span>Status</span>
+                      <strong class="moving">Moving</strong>
+                    </div>
+
+                    <div>
+                      <span>Route</span>
+                      <strong>Plan A</strong>
+                    </div>
+
+                    <div>
+                      <span>Stops</span>
+                      <strong>12</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- BTMS label -->
+                <div class="btms-floating-label">
+                  <span>BTMS</span>
+                  <small>Bus Tracking & Management</small>
+                </div>
+              </div>
+
+              <span class="video-ratio">9 : 16</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= INTRO ================= -->
+
+      <section class="section section-light">
+        <div class="container narrow-container">
+          <div class="story-intro">
+            <span class="section-label"> START WITH THE STUDENT </span>
+
+            <h2>A student opens BTMS. What happens next?</h2>
+
+            <p>
+              The following workflow explains the complete system in the same
+              order in which the information moves through BTMS.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 01 ================= -->
+
+      <section class="workflow-step-section">
+        <div class="container">
+          <div class="workflow-step">
+            <div class="step-number">01</div>
+
+            <div class="step-content">
+              <span class="section-label"> STUDENT DATA </span>
+
+              <h2>The Super Admin creates student accounts.</h2>
+
+              <p>
+                Student information is managed by the college Super Admin
+                through the
+                <strong>Organize → Create Users</strong>
+                section.
+              </p>
+
+              <p>
+                The Super Admin can upload student details using Excel sheets.
+                Multiple sheets can be uploaded as required by the organization.
+              </p>
+
+              <div class="workflow-card-grid">
+                <div class="info-card">
+                  <i class="fa-solid fa-file-excel"></i>
+
+                  <h3>Excel Upload</h3>
+
+                  <p>
+                    Student details are imported into the system through
+                    Excel-based organization.
+                  </p>
+                </div>
+
+                <div class="info-card">
+                  <i class="fa-solid fa-users"></i>
+
+                  <h3>Student Records</h3>
+
+                  <p>
+                    Uploaded student information becomes available for
+                    controlled login access.
+                  </p>
+                </div>
+
+                <div class="info-card">
+                  <i class="fa-solid fa-layer-group"></i>
+
+                  <h3>Multiple Uploads</h3>
+
+                  <p>
+                    More than one student sheet can be uploaded when required.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 02 ================= -->
+
+      <section class="workflow-step-section alternate">
+        <div class="container">
+          <div class="workflow-step reverse">
+            <div class="step-visual">
+              <div class="login-card">
+                <div class="login-card-header">
+                  <i class="fa-solid fa-lock"></i>
+
+                  <div>
+                    <strong>Student Login</strong>
+                    <span>College access</span>
+                  </div>
+                </div>
+
+                <div class="login-field">
+                  <span>College Mail ID</span>
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="login-field">
+                  <span>Generated Password</span>
+                  <i class="fa-solid fa-key"></i>
+                </div>
+
+                <div class="login-button">Authenticate</div>
+              </div>
+            </div>
+
+            <div class="step-content">
+              <div class="step-number">02</div>
+
+              <span class="section-label"> AUTHENTICATION </span>
+
+              <h2>Only registered students can log in.</h2>
+
+              <p>
+                A student can access BTMS only when the student's information
+                exists in the uploaded college data.
+              </p>
+
+              <p>
+                The login password follows the configured college-data format:
+              </p>
+
+              <div class="credential-example">
+                <span>Password format</span>
+
+                <strong> First 4 digits of mobile number + Birth Year </strong>
+
+                <code> 9629 + 2006 = 96292006 </code>
+              </div>
+
+              <div class="important-note">
+                <i class="fa-solid fa-circle-info"></i>
+
+                <p>
+                  If the corresponding student data is removed from the system
+                  by the administrator, that student will no longer be able to
+                  authenticate through that organization record.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 03 ================= -->
+
+      <section class="workflow-step-section">
+        <div class="container">
+          <div class="workflow-step">
+            <div class="step-number">03</div>
+
+            <div class="step-content">
+              <span class="section-label"> BUS CONFIGURATION </span>
+
+              <h2>The Super Admin creates and configures buses.</h2>
+
+              <p>
+                Bus information is managed from
+                <strong>Organize → Create Bus</strong>.
+              </p>
+
+              <p>
+                The administrator provides the bus information required by the
+                system, including GPS identification, bus number and previous
+                number information.
+              </p>
+
+              <div class="bus-configuration">
+                <div class="config-row">
+                  <div class="config-icon">
+                    <i class="fa-solid fa-satellite-dish"></i>
+                  </div>
+
+                  <div>
+                    <strong>GPS Number</strong>
+                    <span>
+                      Identifies the GPS information associated with the bus.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="config-row">
+                  <div class="config-icon">
+                    <i class="fa-solid fa-bus"></i>
+                  </div>
+
+                  <div>
+                    <strong>Bus Number</strong>
+                    <span> The bus identifier used within BTMS. </span>
+                  </div>
+                </div>
+
+                <div class="config-row">
+                  <div class="config-icon">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                  </div>
+
+                  <div>
+                    <strong>Previous Number</strong>
+                    <span>
+                      Previous bus numbering information can be maintained.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 04 ================= -->
+
+      <section class="workflow-step-section alternate">
+        <div class="container">
+          <div class="workflow-step reverse">
+            <div class="step-visual">
+              <div class="plan-card">
+                <div class="plan-card-top">
+                  <span>ROUTE PLANS</span>
+
+                  <i class="fa-solid fa-route"></i>
+                </div>
+
+                <div class="plan-list">
+                  <div class="plan active">
+                    <span>Plan A</span>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+
+                  <div class="plan">
+                    <span>Plan B</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+
+                  <div class="plan">
+                    <span>Plan C</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+
+                  <div class="plan">
+                    <span>Other Plans</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-content">
+              <div class="step-number">04</div>
+
+              <span class="section-label"> ROUTE MANAGEMENT </span>
+
+              <h2>Routes are organized through transport plans.</h2>
+
+              <p>
+                Route information can be provided through route Excel sheets and
+                organized into plans such as Plan A, Plan B, Plan C and other
+                configured plans.
+              </p>
+
+              <p>
+                Each bus can therefore be associated with the route information
+                required for that transport plan.
+              </p>
+
+              <div class="mini-feature-list">
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  Plan-based route organization
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  Bus-to-route association
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  Ordered stopping information
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-check"></i>
+                  Excel-based route data
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 05 ================= -->
+
+      <section class="workflow-step-section">
+        <div class="container">
+          <div class="workflow-step">
+            <div class="step-number">05</div>
+
+            <div class="step-content">
+              <span class="section-label"> HOME DASHBOARD </span>
+
+              <h2>The student reaches the bus information directly.</h2>
+
+              <p>
+                After authentication, the home screen can use the student's
+                assigned bus information so that the student does not need to
+                search for their own bus every time.
+              </p>
+
+              <div class="home-feature-grid">
+                <div class="home-feature">
+                  <i class="fa-solid fa-location-crosshairs"></i>
+
+                  <strong> Assigned Bus </strong>
+
+                  <span>
+                    Access the bus associated with the student's account.
+                  </span>
+                </div>
+
+                <div class="home-feature">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+
+                  <strong> Search </strong>
+
+                  <span> Search and explore another available bus. </span>
+                </div>
+
+                <div class="home-feature">
+                  <i class="fa-solid fa-arrows-rotate"></i>
+
+                  <strong> Refresh </strong>
+
+                  <span> Refresh the available bus location information. </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 06 ================= -->
+
+      <section class="workflow-step-section alternate">
+        <div class="container">
+          <div class="workflow-step reverse">
+            <div class="step-visual">
+              <div class="map-ui">
+                <div class="map-ui-header">
+                  <span> Bus Location </span>
+
+                  <span class="map-live">
+                    <span></span>
+                    Live
+                  </span>
+                </div>
+
+                <div class="map-ui-body">
+                  <div class="map-grid-lines"></div>
+
+                  <div class="map-route-line"></div>
+
+                  <div class="map-bus-marker">
+                    <i class="fa-solid fa-bus"></i>
+                  </div>
+
+                  <div class="map-college-marker">
+                    <i class="fa-solid fa-building-columns"></i>
+                  </div>
+                </div>
+
+                <div class="map-ui-footer">
+                  <span> Bus status </span>
+
+                  <strong> Moving </strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-content">
+              <div class="step-number">06</div>
+
+              <span class="section-label"> LIVE BUS INFORMATION </span>
+
+              <h2>The student can see where the bus is.</h2>
+
+              <p>
+                BTMS receives GPS information associated with configured buses
+                and makes the available location information accessible through
+                the application.
+              </p>
+
+              <p>
+                The map interface presents the bus location together with
+                relevant route information.
+              </p>
+
+              <div class="status-explanation">
+                <div>
+                  <span class="status-icon moving">
+                    <i class="fa-solid fa-bus"></i>
+                  </span>
+
+                  <div>
+                    <strong>Moving</strong>
+                    <span> Bus movement detected by the system. </span>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="status-icon waiting">
+                    <i class="fa-solid fa-pause"></i>
+                  </span>
+
+                  <div>
+                    <strong>Waiting</strong>
+                    <span> Bus remains at a location. </span>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="status-icon stopped">
+                    <i class="fa-solid fa-stop"></i>
+                  </span>
+
+                  <div>
+                    <strong>Stopped</strong>
+                    <span> Bus location remains unchanged. </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 07 ================= -->
+
+      <section class="workflow-step-section">
+        <div class="container">
+          <div class="workflow-step">
+            <div class="step-number">07</div>
+
+            <div class="step-content">
+              <span class="section-label"> BUS SEARCH </span>
+
+              <h2>Students can also search for another bus.</h2>
+
+              <p>
+                The assigned bus is available directly from the student's home
+                experience, but BTMS also allows the student to search for other
+                available buses.
+              </p>
+
+              <div class="search-demo">
+                <div class="search-bar">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+
+                  <span> Search bus... </span>
+                </div>
+
+                <div class="search-result">
+                  <div class="bus-result-icon">
+                    <i class="fa-solid fa-bus"></i>
+                  </div>
+
+                  <div>
+                    <strong> Bus Information </strong>
+
+                    <span> Route and current status </span>
+                  </div>
+
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </div>
+
+              <p class="small-explanation">
+                Searching a bus opens its available transport information rather
+                than requiring the student to know its route beforehand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 08 ================= -->
+
+      <section class="workflow-step-section alternate">
+        <div class="container">
+          <div class="workflow-step reverse">
+            <div class="step-visual">
+              <div class="details-card">
+                <div class="details-header">
+                  <div class="bus-circle">
+                    <i class="fa-solid fa-bus"></i>
+                  </div>
+
+                  <div>
+                    <span>BUS</span>
+                    <strong>Bus Details</strong>
+                  </div>
+                </div>
+
+                <div class="detail-row">
+                  <span>
+                    <i class="fa-solid fa-route"></i>
+                    Stoppings
+                  </span>
+
+                  <strong> Route stops </strong>
+                </div>
+
+                <div class="detail-row">
+                  <span>
+                    <i class="fa-solid fa-ruler"></i>
+                    Distance
+                  </span>
+
+                  <strong> Available distance </strong>
+                </div>
+
+                <div class="detail-row">
+                  <span>
+                    <i class="fa-solid fa-gauge-high"></i>
+                    Status
+                  </span>
+
+                  <strong class="moving-text"> Moving </strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-content">
+              <div class="step-number">08</div>
+
+              <span class="section-label"> BUS DETAILS </span>
+
+              <h2>Each selected bus provides useful transport information.</h2>
+
+              <p>
+                After selecting a bus, the student can view the information
+                available for that bus and its route.
+              </p>
+
+              <div class="detail-features">
+                <div>
+                  <i class="fa-solid fa-route"></i>
+
+                  <div>
+                    <strong>Stoppings</strong>
+                    <span>
+                      View the stopping points associated with the selected
+                      route.
+                    </span>
+                  </div>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-ruler-horizontal"></i>
+
+                  <div>
+                    <strong>Distance</strong>
+                    <span>
+                      View the available distance information associated with
+                      the bus location.
+                    </span>
+                  </div>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-gauge"></i>
+
+                  <div>
+                    <strong>Movement Status</strong>
+                    <span>
+                      Understand whether the bus is moving, waiting or stopped.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 09 ================= -->
+
+      <section class="workflow-step-section">
+        <div class="container">
+          <div class="workflow-step">
+            <div class="step-number">09</div>
+
+            <div class="step-content">
+              <span class="section-label"> GLOBAL PLAN </span>
+
+              <h2>The active transport plan is visible to everyone.</h2>
+
+              <p>
+                The application provides a global plan button that shows which
+                transport plan is currently active.
+              </p>
+
+              <p>
+                Selecting the plan allows users to see the buses associated with
+                that plan.
+              </p>
+
+              <div class="global-plan">
+                <div class="current-plan">
+                  <span> CURRENT PLAN </span>
+
+                  <strong> PLAN A </strong>
+                </div>
+
+                <div class="plan-buses">
+                  <span> Buses in this plan </span>
+
+                  <div class="plan-bus-list">
+                    <div>
+                      <i class="fa-solid fa-bus"></i>
+                      Bus
+                    </div>
+
+                    <div>
+                      <i class="fa-solid fa-bus"></i>
+                      Bus
+                    </div>
+
+                    <div>
+                      <i class="fa-solid fa-bus"></i>
+                      Bus
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 10 ================= -->
+
+      <section class="workflow-step-section alternate">
+        <div class="container">
+          <div class="workflow-step reverse">
+            <div class="step-visual">
+              <div class="profile-card">
+                <div class="profile-avatar">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+
+                <strong> Student Profile </strong>
+
+                <span> College account information </span>
+
+                <div class="profile-line"></div>
+
+                <div class="profile-data">
+                  <span>Name</span>
+                  <span>College Mail</span>
+                  <span>Assigned Bus</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-content">
+              <div class="step-number">10</div>
+
+              <span class="section-label"> PROFILE </span>
+
+              <h2>Personal information remains accessible from the profile.</h2>
+
+              <p>
+                Students can open the profile section from the application to
+                view their account information.
+              </p>
+
+              <p>
+                The profile experience provides a clear separation between
+                personal account information and transport tracking features.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 11 ================= -->
+
+      <section class="workflow-step-section">
+        <div class="container">
+          <div class="workflow-step">
+            <div class="step-number">11</div>
+
+            <div class="step-content">
+              <span class="section-label"> ADMINISTRATION </span>
+
+              <h2>The Super Admin gets the organization layer.</h2>
+
+              <p>
+                The <strong>Organize</strong> button is available only to the
+                Super Admin.
+              </p>
+
+              <p>
+                This keeps administrative functions separate from the normal
+                student experience.
+              </p>
+
+              <div class="admin-module-grid">
+                <div class="admin-module">
+                  <i class="fa-solid fa-users"></i>
+
+                  <strong> Create Users </strong>
+
+                  <span> Upload student information through Excel. </span>
+                </div>
+
+                <div class="admin-module">
+                  <i class="fa-solid fa-bus"></i>
+
+                  <strong> Create Bus </strong>
+
+                  <span> Configure bus and GPS information. </span>
+                </div>
+
+                <div class="admin-module">
+                  <i class="fa-solid fa-route"></i>
+
+                  <strong> Route Data </strong>
+
+                  <span> Organize route plans and stopping information. </span>
+                </div>
+
+                <div class="admin-module">
+                  <i class="fa-solid fa-file-excel"></i>
+
+                  <strong> Excel Import </strong>
+
+                  <span>
+                    Bring structured transport information into the system.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= COMPLETE FLOW ================= -->
+
+      <section class="complete-flow-section">
+        <div class="container">
+          <div class="section-heading centered dark-heading">
+            <span class="section-label"> COMPLETE SYSTEM FLOW </span>
+
+            <h2>From configuration to live tracking.</h2>
+
+            <p>This is the complete conceptual flow of BTMS.</p>
+          </div>
+
+          <div class="complete-flow">
+            <div class="flow-node">
+              <div>
+                <i class="fa-solid fa-file-excel"></i>
+              </div>
+
+              <strong> College Data </strong>
+
+              <span> Students & Routes </span>
+            </div>
+
+            <div class="flow-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="flow-node">
+              <div>
+                <i class="fa-solid fa-user-shield"></i>
+              </div>
+
+              <strong> Super Admin </strong>
+
+              <span> Configure System </span>
+            </div>
+
+            <div class="flow-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="flow-node">
+              <div>
+                <i class="fa-solid fa-satellite-dish"></i>
+              </div>
+
+              <strong> GPS Information </strong>
+
+              <span> Bus Location </span>
+            </div>
+
+            <div class="flow-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="flow-node">
+              <div>
+                <i class="fa-solid fa-server"></i>
+              </div>
+
+              <strong> BTMS Backend </strong>
+
+              <span> Process & Store </span>
+            </div>
+
+            <div class="flow-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="flow-node">
+              <div>
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+
+              <strong> Student </strong>
+
+              <span> Track & Explore </span>
+            </div>
+          </div>
+
+          <div class="simple-flow">
+            <span>GPS</span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+            <span>BTMS</span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+            <span>Student</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TECHNICAL ARCHITECTURE ================= -->
+
+      <section class="section section-light">
+        <div class="container">
+          <div class="section-heading centered">
+            <span class="section-label"> BEHIND THE INTERFACE </span>
+
+            <h2>The engineering architecture.</h2>
+
+            <p>
+              The user sees a simple mobile interface, while multiple technical
+              components work behind it.
+            </p>
+          </div>
+
+          <div class="technical-architecture">
+            <div class="technical-column">
+              <span class="technical-label"> FRONTEND </span>
+
+              <div class="technical-box">
+                <i class="fa-solid fa-mobile-screen"></i>
+
+                <div>
+                  <strong> React Native / Expo </strong>
+
+                  <span> Mobile user interface </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="technical-connector">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="technical-column">
+              <span class="technical-label"> BACKEND </span>
+
+              <div class="technical-box">
+                <i class="fa-solid fa-server"></i>
+
+                <div>
+                  <strong> Node.js / Express </strong>
+
+                  <span> API & application logic </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="technical-connector">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="technical-column">
+              <span class="technical-label"> DATA </span>
+
+              <div class="technical-box">
+                <i class="fa-solid fa-database"></i>
+
+                <div>
+                  <strong> MongoDB </strong>
+
+                  <span> Application data </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="technical-connector">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="technical-column">
+              <span class="technical-label"> REAL-TIME </span>
+
+              <div class="technical-box">
+                <i class="fa-solid fa-bolt"></i>
+
+                <div>
+                  <strong> Socket.IO </strong>
+
+                  <span> Real-time communication </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FINAL ================= -->
+
+      <section class="final-workflow">
+        <div class="container">
+          <div class="final-content">
+            <span class="section-label"> BTMS IN ONE LINE </span>
+
+            <h2>College Data → BTMS → Live Transport Information</h2>
+
+            <p>
+              BTMS brings student access, bus configuration, route planning, GPS
+              information and live transport visibility into one connected
+              system.
+            </p>
+
+            <a href="index.html" class="white-button">
+              Back to Overview
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <strong>BTMS</strong>
+          <span> Bus Tracking & Management System </span>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html"> Home </a>
+
+          <a href="workflow.html"> How It Works </a>
+        </div>
+
+        <p>College Transport Management System</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
